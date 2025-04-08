@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapls.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h1>Anjay web</h1>
+    </header>
+    <nav style="background-color: #e0e0e0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="Beranda.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Biodata.html">Biodata</a></li>
+            <li style="display: inline;"><a href="Kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-left: 1450px;"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <img style="width: 1900px; height: 500px; margin-top: 10px;" src="img/IMG_20250327_1816061.jpg">
+
+    <div style="display: flex; padding: 20px;">
+        <div class="content" style="flex: 3; padding-right: 20px;">
+            <form id="login">
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>
+                        <label>Username: </label>
+                        <input type="text" id="username" name="username" placeholder="username...">
+                    </p>
+                    <p>
+                        <label>Password: </label>
+                        <input type="password" id="password" name="password" placeholder="password...">
+                    </p>
+                    <p>
+                        <label><input type="checkbox" name="remember" value="remember">Remember me</label>
+                    </p>
+                    <p>
+                        <button type="button" onclick="validatelogin()" name="submit" value="login">Login</button>
+                        <button type="button" onclick="location.href='register.html'">Register</button>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+            <h3>Info tambahan</h3>
+            <p>informasi tambahan.</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id">Website UNIVERSITAS</a></li>
+                <li><a href="https://fst.unpatti.ac.id">Website FAKULTAS</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id">Website PRODI</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
+        <p>&copy; 2025 Rendy Aldrian Sibata.</p>
+    </footer>
+</body>
+<script>
+    function validatelogin() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "rendy" && password === "anjay") {
+            window.location.href = "Beranda.html";
+        } else {
+            alert("Username atau Password salah!");
+        }
+    }
+</script>
+</html>

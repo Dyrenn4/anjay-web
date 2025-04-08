@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak</title>
+    <link href="https://fonts.googleapls.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h1>Anjay web</h1>
+    </header>
+    <nav style="background-color: #e0e0e0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="Beranda.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Biodata.html">Biodata</a></li>
+            <li style="display: inline;"><a href="Kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-left: 1450px;"><a href="Login.html">Login</a> <a href="register.html">Register</a></li>
+
+        </ul>
+    </nav>
+
+    <img style="width: 1900px; height: 500px; margin-top: 10px;" src="img/IMG_20250327_1816061.jpg">
+
+    <div style="display: flex; padding: 20px;">
+        <div class="content" style="flex: 3; padding-right: 20px;">
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <p>
+                    <label>Nama:</label><br>
+                    <input type="text" name="name" placeholder="nama kamu..." id="name">
+                    </p>
+                    <p>
+                    <label>Email:</label><br>
+                    <input type="email"  name="email" placeholder="Email kamu..." id="email">
+                    </p>
+                    <p>                   
+                    <label>Pesan:</label><br>
+                    <input type="text" name="subject" placeholder="Pesan..." id="subject">
+                    </p>
+                    <p>
+                    <button type="button" onclick="sendMessage()">Kirim</button>
+                    </p>
+                </fieldset>
+            </form>
+
+            <br>
+            <h2>Lokasi Saya</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15926.936649293872!2d128.23559346982915!3d-3.647974760857869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6cec05fa0d3777%3A0xe2d14bbca95ee287!2sCitraLand%20Ambon!5e0!3m2!1sid!2sid!4v1742451972708!5m2!1sid!2sid" width="900" height="650" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+            <h3>Info tambahan</h3>
+            <p>informasi tambahan.</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id">Website UNIVERSITAS</a></li>
+                <li><a href="https://fst.unpatti.ac.id">Website FAKULTAS</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id">Website PRODI</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
+        <p>&copy; 2025 Rendy Aldrian Sibata.</p>
+    </footer>
+</body>
+
+<script>
+    function sendMessage() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var subject = document.getElementById("subject").value;
+
+        alert("Pesan terkirim!\n\nNama: " + name + "\nEmail: " + email + "\nPesan: " + subject);
+        document.getElementById(name).value = "";
+        document.getElementById(email).value = "";
+        document.getElementById(subject).value = "";
+    }
+</script>
+
+</html>

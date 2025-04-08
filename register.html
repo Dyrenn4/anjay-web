@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="https://fonts.googleapls.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
+        <h1>Anjay web</h1>
+    </header>
+    <nav style="background-color: #e0e0e0; padding: 10px;">
+        <ul style="list-style-type: none; margin: 0; padding: 0;">
+            <li style="display: inline; margin-right: 10px;"><a href="Beranda.html">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Biodata.html">Biodata</a></li>
+            <li style="display: inline;"><a href="Kontak.html">Kontak</a></li>
+            <li style="display: inline; margin-left: 1450px;"><a href="Login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <img style="width: 1900px; height: 500px; margin-top: 10px;" src="img/IMG_20250327_1816061.jpg">
+
+    <div style="display: flex; padding: 20px;">
+        <div class="content" style="flex: 3; padding-right: 20px;">
+            <form id="registrasiFrom">
+                <fieldset>
+                    <legend>Registrasi</legend>
+                    <p>
+                        <label>Nama: </label><br>
+                        <input type="text" name="nama" placeholder="nama lengkap..." id="nama">
+                    </p>
+                    <p>
+                        <label>Username: </label><br>
+                        <input type="text" name="username" placeholder="username..." id="username">
+                    </p>
+                    <p>
+                        <label>Email: </label><br>
+                        <input type="email" name="email" placeholder="Email kamu..." id="email">
+                    </p>
+                    <p>
+                        <label>Password: </label><br>
+                        <input type="password" name="password" placeholder="Password..." id="password">
+                    </p>
+                    <p>
+                        <label>Tanggal Lahir: </label><br>
+                        <input type="date" name="tanggal" id="tanggal">
+                    </p>
+                    <p>
+                        <label>Jenis Kelamin: </label><br>
+                        <label><input type="radio" name="jenis_kelamin" value="laki-laki" id="laki">Laki-Laki</label>
+                        <label><input type="radio" name="jenis_kelamin" value="perempuan" id="perempuan">Perempuan</label>
+                    </p>
+                    <p>
+                        <Label>Agama: </Label><br>
+                        <select name="agama" id="agama">
+                            <option value="islam">Islam</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="budha">Budha</option>
+                            <option value="Konghuchu">Konghuchu</option>
+                        </select>
+                    </p>
+                    <p>
+                    <label>Biografi:</label><br>
+                    <textarea name="biografi" id="biografi"></textarea>
+                    </p>
+                    <p>
+                        <button type="button" onclick="KonfirmasiRegistrasi()">Daftar</button>
+                    </p>
+                </fieldset>
+            </form> 
+        </div>
+        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+            <h3>Info tambahan</h3>
+            <p>informasi tambahan.</p>
+            <ul>
+                <li><a href="https://unpatti.ac.id">Website UNIVERSITAS</a></li>
+                <li><a href="https://fst.unpatti.ac.id">Website FAKULTAS</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id">Website PRODI</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
+        <p>&copy; 2025 Rendy Aldrian Sibata.</p>
+    </footer>
+</body>
+<script>
+    function KonfirmasiRegistrasi() {
+        var nama = document.getElementById("nama").value;
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var tanggal = document.getElementById("tanggal").value;
+        var jenisKelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
+        var agama = document.getElementById("agama").value;
+        var biografi = document.getElementById("biografi").value;
+
+        var jenisKelaminValue = jenisKelamin ? jenisKelamin.value : "tidak dipilih";
+        var konfirmasi = "konfirmasi registrasi:\n\n" +
+            "Nama: " + nama + "\n" +
+            "Username: " + username + "\n" +
+            "Email: " + email + "\n" +
+            "Password: " + password + "\n" +
+            "Tanggal Lahir: " + tanggal + "\n" +
+            "Jenis Kelamin: " + jenisKelaminValue + "\n" +
+            "Agama: " + agama + "\n" +
+            "Biografi: " + biografi;
+        
+        alert(konfirmasi);
+    }
+</script>
+</html>
