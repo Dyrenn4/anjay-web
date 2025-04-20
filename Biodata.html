@@ -4,106 +4,34 @@
     <meta charset="UTF-8">
     <title>Biodata</title>
     <link href="https://fonts.googleapls.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        nav {
-            background-color: #e0e0e0;
-            padding: 10px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: blue;
-        }
-
-        aside {
-            flex: 1;
-            background-color: #f0f0f0;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgb(44, 44, 44);
-            margin-top: 10px;
-        }
-
-        aside h3 {
-            color:#333;
-            margin-bottom: 10px;
-        }
-
-        aside ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        aside li {
-            margin-bottom: 5px;
-        }
-
-        aside a {
-            text-decoration: none;
-            color: #007BFF;
-        }
-
-        header h1 {
-            margin-top: 0;
-        }
-
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 10px auto;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgb(44, 44, 44);
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header style="background-color: #f0f0f0; padding: 10px; text-align: center;">
         <h1>Anjay web</h1>
     </header>
-    <nav style="background-color: #e0e0e0; padding: 10px;">
+    <nav style="background-color: #ff9123; padding: 10px;">
         <ul style="list-style-type: none; margin: 0; padding: 0;">
-            <li style="display: inline; margin-right: 10px;"><a href="Beranda.html">Beranda</a></li>
-            <li style="display: inline; margin-right: 10px;"><a href="Biodata.html">Biodata</a></li>
-            <li style="display: inline;"><a href="Kontak.html">Kontak</a></li>
-            <li style="display: inline; margin-left: 1450px;"><a href="Login.html">Login</a> <a href="register.html">Register</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Beranda.html" style="color: white;">Beranda</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Biodata.html" style="color: white;">Biodata</a></li>
+            <li style="display: inline;"><a href="Kontak.html" style="color: white;">Kontak</a></li>
+            <li style="display: inline; margin-right: 10px;"><a href="Login.html" style="color: white;">Login</a></li>
         </ul>
     </nav>
 
     <img style="width: 1900px; height: 500px; margin-top: 10px;" src="img/IMG_20250327_1816061.jpg">
 
     <div style="display: flex; padding: 20px;">
-        <div class="content" style="flex: 3; padding-right: 20px;">
-            <table  border="1" border-colaps="colspan">
+        <div class="content" style="flex: 3; display: flex; flex-direction: column; align-items: center;">
+            <table  style="margin: 0 auto;" border="0" cellspacing="0" cellpadding="10">
                 <thead>
                     <tr>
-                        <th colspan="3" bgcolor="orange">Biodata</th>
+                        <th colspan="3">Biodata</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td rowspan="6"><img src="img/WIN_20250202_22_26_21_Pro.jpg" width="200" alt="foto profi"></td>
-                    </tr>
-                    <tr>
+                    <img src="img/WIN_20250202_22_26_21_Pro.jpg" width="200" alt="foto profi">
+                    <tr padding-right="100px">
                         <td>Nama</td>
                         <td>Rendy Aldrian Sibata</td>
                     </tr>
@@ -126,10 +54,10 @@
                 </tbody>
             </table>
             <br>
-            <table  border="1" border-colaps="colspan">
+            <table style="margin: 0 auto;" border="0" cellspacing="0" cellpadding="10">
                 <thead>
                     <tr>
-                        <th colspan="2" bgcolor="orange">Pendidikan</th>
+                        <th colspan="2">Pendidikan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -147,10 +75,10 @@
                 </tbody>
             </table>
             <br>
-            <table  border="1" border-colaps="colspan">
+            <table style="margin: 0 auto;" border="0" cellspacing="0" cellpadding="10">
                 <thead>
                     <tr>
-                        <th colspan="2" bgcolor="orange">Hobi</th>
+                        <th colspan="2">Hobi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -163,10 +91,10 @@
                 </tbody>
             </table>
             <br>
-            <table  border="1" border-colaps="colspan">
+            <table style="margin: 0 auto;" border="0" cellspacing="0" cellpadding="10">
                 <thead>
                     <tr>
-                        <th colspan="2" bgcolor="orange">Keterampilan</th>
+                        <th colspan="2">Keterampilan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -181,15 +109,41 @@
         </div>
 
 
-        <aside style="flex: 1; background-color: #f0f0f0; padding: 10px;">
+        <aside style="flex: 1; background-color: #ff9123; padding: 10px;">
             <h3>Info tambahan</h3>
             <p>informasi tambahan.</p>
             <ul>
-                <li><a href="https://unpatti.ac.id">Website UNIVERSITAS</a></li>
-                <li><a href="https://fst.unpatti.ac.id">Website FAKULTAS</a></li>
-                <li><a href="https://ilkom.fst.unpatti.ac.id">Website PRODI</a></li>
+                <li><a href="https://unpatti.ac.id" style="color: #e0e0e0;">Website UNIVERSITAS</a></li>
+                <li><a href="https://fst.unpatti.ac.id" style="color: #e0e0e0;">Website FAKULTAS</a></li>
+                <li><a href="https://ilkom.fst.unpatti.ac.id" style="color: #e0e0e0;">Website PRODI</a></li>
             </ul>
         </aside>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2 style="text-align: center;">Universitas</h2>
+            <a href="https://unpatti.ac.id"><img src="img/cropped-logo-1.png" style="width: 150px; border: none; box-shadow: none;"></a>
+            <p style="text-align: center;">Universitas pattimura</p>
+        </div>
+        
+        <div class="column middle">
+            <h2 style="text-align: center;">Email Dan Kontak</h2>
+            <div style="display: flex; gap: 30px; justify-content:center">
+                <a href="rendyaldriansibata495@gmail.com"><img src="img/1745134033998.png" style="width: 130px; border: none; box-shadow: none;"></a>
+                <a href="https://wa.me/+62 821-1469-6056"><img src="img/1745134033824.png" style="width: 130px; border: none; box-shadow: none;"></a>
+            </div>
+            <p style="text-align: center;">Email : rendyaldriansibata495@gmail.com <br> Kontak : 082114696056
+            </p>
+        </div>
+    
+        <div class="column side">
+            <h2 style="text-align: center;">Sosial Media</h2>
+            <div style="display: flex; gap: 30px; justify-content:center">
+                <a href="https://www.instagram.com/renn.4_?igsh=cGRnaWVqY3U5dXNz"><img src="img/1745134033883.png" style="width: 130px; border: none; box-shadow: none;"></a>
+                <a href="https://www.facebook.com/share/1FzbbBoEgs/"><img src="img/1745134033935.png" style="width: 130px; border: none; box-shadow: none;"></a>
+            </div>
+            <p style="text-align: center;">Instagram : @renn.4_ <br> Facebook : Rendy Ren</p>
+        </div>
     </div>
 
     <footer style="background-color: #e0e0e0; padding: 10px; text-align: center;">
